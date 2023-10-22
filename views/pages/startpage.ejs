@@ -1,0 +1,46 @@
+<%- include('../partials/header_s') %>
+
+<br><br><br><br><br>
+<div class="container-sm">
+  <form
+    class="col-12 col-md-6 mx-auto shadow p-4"
+    action="/"
+    method="POST"
+    id="formms"
+    enctype="multipart/form-data"
+  >
+    <div class="mb-4 mt-3 border-bottom">
+      <label for="name" class="form-label">Create Unique Username: </label>
+      <input
+        type="text"
+        name="user"
+        id="name"
+        autocomplete="off"
+        class="form-control form-control-lg border-0"
+        placeholder="Enter username"
+        minlength="3"
+        maxlength="16"
+        required
+      />
+    </div>
+        <!-- <input
+          type="checkbox"
+          name="remember-me"
+          class="form-check-input"
+        /> -->
+        <!-- <span class="mx-1">Remember me</span> -->
+      <!-- </label> -->
+    <button
+      class="d-block w-50 mx-auto btn btn-outline-dark mt-5"
+    >
+      Get In
+    </button>
+  </form>
+
+  </div>
+
+
+
+  
+
+  <%- include('../partials/footer_s') %>

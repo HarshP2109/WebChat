@@ -1,0 +1,26 @@
+<div class="chat-list">
+    <a href="#" class="d-flex align-items-center fri-acc">
+      <div class="flex-shrink-0">
+        <img class="img-fluid" src="https://mehedihtml.com/chatbox/assets/img/user.png" alt="user img">
+      </div>
+      <div class="flex-grow-1 ms-3">
+        <h3>Harsh Pimpale</h3>
+        <p>Back End Developer</p>
+      </div>
+    </a>
+   
+    
+<% n = NAME.length %>
+<% for (var i = 0; i < n; i++) { %>
+  <a href="#" class="d-flex align-items-center fri-acc">
+    <div class="flex-shrink-0">
+      <img class="img-fluid" src="https://mehedihtml.com/chatbox/assets/img/user.png" alt="user img">
+    </div>
+    <div class="flex-grow-1 ms-3">
+      <h3><%- NAME[i].Name %></h3>
+      <p>ID : <%- NAME[i].ID %></p>
+    </div>
+  </a>
+<% } %>
+
+  </div>

@@ -177,8 +177,18 @@ socket.on("send text",(data) => {
         addchat(clas,data[i].Message,data[i].Time); 
         // scrollToBottom();
     };
+});    
 
-
+socket.on("curr text",(data) => {
+    let sender = data.From;
+    let mess = data.Message;
+    let time = data.Time;
+    let in_chat = document.querySelector('.prof-acc').querySelector('div > h3').innerHTML;
+    // in_chat = in_chat.replace("ID : ", "");
+    console.log(in_chat+" "+sender);
+    if(sender === in_chat){
+        addchat("sender",mess,time);
+    }
 });
 
 socket.on("get connect",(naam,Id) => {

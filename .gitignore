@@ -137,3 +137,5 @@ dist
 #my files
 finalconnect.js
 server.js
+finalmongoose2.js
+finalgpt.js
